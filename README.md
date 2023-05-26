@@ -2,7 +2,7 @@
 
 Set up a webhook handler to listen for and process Parafin events. Test out your webhook handler by:
 * using ngrok to create a temporary public URL to tunnel requests to your local application 
-* triggering events in sandbox mode with Parafin's [Trigger Webhooks](https://docs.parafin.com/api#tag/Sandboxes/operation/Trigger%20Webhook) endpoint
+* triggering events in sandbox mode with Parafin's [Trigger Webhook](https://docs.parafin.com/api/#tag/Sandbox/operation/Trigger%20Webhook) endpoint
 
 
 ## Prerequisites 
@@ -59,8 +59,8 @@ In a separate terminal tab, run the following to start listening for events:
 $ npm start
 ```
 
-### 3. Trigger events in sandbox mode
-Once your webhook handler is running and listening for events, Fetch your [client ID and client secret](https://dashboard.parafin.com/developer/api-keys?sandbox_mode=true) from the Parafin dashboard and use our [Trigger Webhook](/api#tag/Sandboxes/operation/Trigger%20Webhook) endpoint to simulate events. 
+### 5. Trigger events in sandbox mode
+Once your webhook handler is running and listening for events, Fetch your [client ID and client secret](https://dashboard.parafin.com/developer/api-keys?sandbox_mode=true) from the Parafin dashboard and use our [Trigger Webhook](https://docs.parafin.com/api/#tag/Sandbox/operation/Trigger%20Webhook) endpoint to simulate events. 
 
 ```bash
 curl https://api.parafin.com/v1/sandbox/trigger_webhook \
