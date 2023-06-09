@@ -1,5 +1,6 @@
 const express = require('express');
 const crypto = require('crypto');
+const { log } = require('console');
 require('dotenv').config();
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET
 
@@ -20,7 +21,11 @@ app.post('/parafin-webhook-handler', async function(req, res) {
   // compare the signature against the one in the request
   if (signature !== expectedSignature) {
     throw new Error("Invalid signature.");
+  } else {
+    console.log("Signatured verified!");
   }
+
+  console.log(body);
 
   // handle the event
   switch (body.event) {
