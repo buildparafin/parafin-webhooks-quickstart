@@ -10,7 +10,6 @@ Set up a webhook handler to listen for and process Parafin events. Test out your
 * [Node.js](https://nodejs.org/en/)
 * [ngrok](https://ngrok.com/)
 
-
 ## Instructions
 
 ### 1. Clone repo
